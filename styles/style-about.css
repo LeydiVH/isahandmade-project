@@ -95,14 +95,15 @@
 }
 
 .founder__image {
-    width: 100%;
+    height: 100%;
     border-radius: 1%;
-    max-height: 900px;
+    max-height: 500px;
     object-fit: cover;
 }
 
 .founder__card {
-    margin: 0px 70vh;
+    margin: 0px 300px;
+    margin-bottom: 100px;
 }
 
 @media (max-width: 600px) {
