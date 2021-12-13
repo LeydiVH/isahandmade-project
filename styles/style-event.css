@@ -94,6 +94,7 @@
 .definition__title {
     font-weight: 800;
     text-align: center;
+    padding: 20px;
 }
 
 .definition__paragraph {
@@ -112,23 +113,9 @@
     }
 }
 
-.information__form {
-    display: flex;
-    flex-direction: column;
-}
-
-.information__form--personalData {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 250px;
-}
-
-@media (max-width: 600px) {
-    .information__form--personalData {
-        display: flex;
-        flex-direction: column;
-        margin: 0px 20px;
-    }
+.information {
+    max-width: 70vw;
+    margin: 60px auto;
 }
 
 .personalData__title {
@@ -137,98 +124,9 @@
     margin: 40px 0px;
 }
 
-.personalData__container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 40px;
-}
-
-.personalData__container--nameUser {
-    display: flex;
-    justify-content: space-between;
-}
-
-.personalData__container--name {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-basis: 50%;
-}
-
-.personalData__container--user {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-basis: 50%;    
-}
-
-.personalData__container--phoneEnterprise {
-    display: flex;
-    justify-content: space-between;
-}
-
-.personalData__container--phone {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-basis: 50%;
-}
-
-.personalData__container--enterprise {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-basis: 50%;
-}
-
-#name__user,
-#email__user,
-#phone__user,
-#enterprise__user {
-    padding: 20px;
-    width: 80%;
-}
-
 @media (max-width: 600px) {
     .personalData__title {
         font-size: 20px;
-    }
-    
-    .personalData__container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 40px;
-    }
-
-    #name__user,
-    #email__user,
-    #phone__user,
-    #enterprise__user {
-        padding: 20px;
-        width: 80%;
-    }
-
-    #name__user::placeholder,
-    #email__user::placeholder,
-    #phone__user::placeholder,
-    #enterprise__user::placeholder {
-        font-size: 12px;
-    }
-}
-
-.information__form--order {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 250px;
-}
-
-@media (max-width: 600px) {
-    .information__form--order {
-        display: flex;
-        flex-direction: column;
-        margin: 0px 20px;
     }
 }
 
@@ -238,110 +136,21 @@
     width: 60%;
     height: 0.1px;
     margin: auto;
-    margin-top: 80px;
-    margin-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     text-align: center;
 }
 
 .order__title {
     font-size: 24px;
     font-weight: 700;
-    margin: 40px 0px 0px 0px;
+    margin: 40px 0px;
 }
-
-.order__subtitle {
-    color: #2f2e31;
-    font-weight: 500;
-    width: 50%;
-    display: flex;
-    align-items: center;
-}
-
-.order__container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.order__container--orderType {
-    padding: 20px 0px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.order__container--quantity {
-    padding: 20px 0px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.order__container--price {
-    padding: 20px 0px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-basis: 100%;
-}
-
-.order__container--date {
-    padding: 20px 0px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.order__container--frequentlyUser {
-    padding: 20px 0px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.order__container--additionalInfo {
-    padding: 20px 0px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#order__type,
-#order__quantity,
-#order__price,
-#order__date {
-    padding: 20px;
-    width: 50%;
-}
-
 
 @media (max-width: 600px) {
     .order__title {
         font-size: 20px;
-    }
-    
-    .order__subtitle {
-        font-size: 12px;
-    }
-    
-    #order__type,
-    #order__quantity,
-    #order__price,
-    #order__date {
-        padding: 20px;
-        width: 50%;
-    }
-
-    #order__type::placeholder,
-    #order__quantity::placeholder,
-    #order__price::placeholder,
-    #order__date::placeholder {
-        font-size: 12px;
-    }
+    }    
 }
 
 .information__form--containerButton {
@@ -349,24 +158,6 @@
     justify-content: center;
     align-items: center;
     margin: 60px 0px;
-}
-
-.information__form--button {
-    background-color: #0b3944;
-    color: #FFFFFF;
-    font-weight: 400;
-    border-style: none;
-    padding: 20px 30px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-
-@media (max-width: 600px) {
-    .information__form--button {
-        padding: 15px 20px;
-        font-size: 12px;
-    }
 }
 
 .footer {

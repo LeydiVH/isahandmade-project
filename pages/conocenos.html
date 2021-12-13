@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="../styles/style-about.css">
     <!-- <!-- Inserción de librería de íconos de Iconify-->
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+     <!-- Inserción de Bootstrap -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
     <title>CONÓCENOS</title>
 </head>
 <body>
@@ -52,29 +55,41 @@
     <main>
         <!-- Fundadores -->
         <section class="founder">   
+
+
             <h2 class="founder__generalTitle">FUNDADORAS</h2>
-            <div class="founder__container founder__container--one">
-                <article class="founder__item founder__item--one">
-                    <div class="founder__container founder__container--image">
-                        <img class="founder__image" src="../images/founder.jpg" alt="">
+
+            <div class="founder__card">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <img class="founder__image" src="../images/founder.jpg" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h4 class="card-title">Leydi Velazco</h4>
+                          <p class="card-text">Estudiante de Desarrollo Web, Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, a repudiandae! Veniam expedita, nesciunt exercitationem quisquam deleniti suscipit hic autem ad quis non dolor consequatur fugit similique ex adipisci ipsum!</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="founder__container founder__container--text">
-                        <h2>Leydi Velazco</h2>
-                        <h3>Estudiante de Desarrollo Web</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quasi quidem porro, odio officiis dolore voluptas reprehenderit est adipisci sapiente laborum architecto cumque nemo soluta accusamus iure tempore! Qui, consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, adipisci inventore, minima a error sint nihil veritatis perferendis sed quibusdam, quidem vel pariatur et qui numquam reprehenderit. Error, unde labore?</p>
+                </div>
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <img class="founder__image" src="../images/founder.jpg" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h4 class="card-title">Leydi Velazco</h4>
+                          <p class="card-text">Estudiante de Desarrollo Web, Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, a repudiandae! Veniam expedita, nesciunt exercitationem quisquam deleniti suscipit hic autem ad quis non dolor consequatur fugit similique ex adipisci ipsum!</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
                     </div>
-                </article>
-                <article class="founder__item founder__item--two ">
-                    <div class="founder__container founder__container--image">
-                        <img class="founder__image" src="../images/founder.jpg" alt="">
-                    </div>
-                    <div class="founder__container founder__container--text">
-                        <h2>Leydi Velazco</h2>
-                        <h3>Estudiante de Desarrollo Web</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quasi quidem porro, odio officiis dolore voluptas reprehenderit est adipisci sapiente laborum architecto cumque nemo soluta accusamus iure tempore! Qui, consequuntur.</p>
-                    </div>
-                </article>
+                </div>
             </div>
+            
         </section>
     </main>
 
@@ -113,5 +128,7 @@
             <p class="footer__copyright">© 2021 IsaHandmade. TODOS LOS DERECHOS RESERVADOS</p>
         </div>  
     </footer>
+
+    
 </body>
 </html>
