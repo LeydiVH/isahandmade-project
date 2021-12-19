@@ -1,0 +1,46 @@
+.comment {
+    display: flex;
+    background-color: #f8d7ce;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .comment__image {
+            width: 100%;
+            max-width: 100px;
+            margin: 60px auto 25px auto;
+        }
+
+        .comment__paragraph {
+            font-size: 20px;            
+        }
+        
+        .comment__paragraph--quote {
+            padding: 10px 100px;
+            margin-bottom: 25px;
+        }
+        
+        .comment__paragraph--name {
+            font-weight: 300;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .comment__image {
+        max-width: 90px;
+        margin: 60px 0px 25px 0px;
+    }
+    
+    .comment__paragraph {
+        font-size: 10px;
+
+        .comment__paragraph--quote {
+            padding: 10px 60px;
+        }
+    }
+}

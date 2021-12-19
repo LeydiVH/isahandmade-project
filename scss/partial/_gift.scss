@@ -1,0 +1,90 @@
+.gift__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .gift__container--option {
+        display: grid;
+        grid-template-columns: 50% 50%;   
+
+        .gift__image {
+            max-width: 100%;
+        }
+
+        .gift__containerText {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            
+            .gift__title {
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
+            
+            .gift__paragraph {
+                padding: 20px;
+            }
+            
+            .gift__button {
+                font-weight: 500;
+                color: #000000;
+                cursor: pointer;
+                background-color: #f3d4e38c;
+                margin-top: 15px;
+                padding: 20px;
+                border-radius: 8px;
+            }
+            
+            .gift__button:hover {
+                background-color: #626164;
+                color: #ffffff;
+                transition: all .5s;
+            }
+        }
+        
+        .gift__containerText--firstOption {
+            background-color: #e4b1b3; 
+        }
+        .gift__containerText--secondOption {
+            background-color: #b8979e;
+        }
+    } 
+}
+
+@media (max-width: 600px) {
+    .gift__container--option {
+        display: grid;
+        grid-template-columns: 100%;
+
+        .gift__image--mobile {
+            max-width: 100%;
+        }
+
+        .gift__containerText {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            .gift__title {
+                margin-top: 50px;
+                font-size: 20px;
+            }
+            
+            .gift__paragraph {
+                padding: 10px;
+                font-size: 10px;
+            }
+        
+            .gift__button {
+                padding: 15px;
+                font-size: 10px;
+                margin-bottom: 50px;
+            }
+        }
+    } 
+}
