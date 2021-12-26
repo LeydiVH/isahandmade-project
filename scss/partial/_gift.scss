@@ -1,3 +1,11 @@
+$headings: (
+    h2: 32px,
+    h3: 16px
+);
+
+$h2: map-get($headings, h2);
+$h3: map-get($headings, h3);
+
 .gift__container {
     display: flex;
     flex-direction: column;
@@ -22,10 +30,12 @@
             .gift__title {
                 font-weight: 500;
                 margin-bottom: 15px;
+                font-size: $h2;
             }
             
             .gift__paragraph {
                 padding: 20px;
+                font-size: $h3;
             }
             
             .gift__button {
@@ -44,13 +54,24 @@
                 transition: all .5s;
             }
         }
+
+        @mixin containerText ($color) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $color; 
+            width: 100%;
+        }
         
         .gift__containerText--firstOption {
-            background-color: #e4b1b3; 
+            @include containerText(#d38495);
         }
+        
         .gift__containerText--secondOption {
-            background-color: #b8979e;
+            @include containerText(#e2856b);
         }
+        
     } 
 }
 

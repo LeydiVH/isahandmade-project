@@ -1,3 +1,11 @@
+$headings: (
+    h2: 32px,
+    h3: 16px
+);
+
+$h2: map-get($headings, h2);
+$h3: map-get($headings, h3);
+
 .product {
     background-color: #ffffff;
     color: #3d3942;
@@ -7,7 +15,7 @@
     &__generalTitle {
         text-align: center;
         margin: 60px 0px;
-        font-size: 32px;
+        font-size: $h2;
     }
 
     &__container {
@@ -22,6 +30,8 @@
             max-width: 250px;
             max-height: 250px;
             object-fit: cover;
+            box-shadow: 0.5px 1px 6px 0px #e2e1e1; 
+            padding: 50px; 
         }
 
         .product__item {
@@ -32,7 +42,7 @@
 
         .product__title {
             font-weight: 500;
-            font-size: 16px;
+            font-size: $h3;
             text-align: center;
             margin-top: 20px;
         }
@@ -55,6 +65,7 @@
         }
     }
 }
+
 
 @media (max-width: 600px) {
     .product__generalTitle {
@@ -84,3 +95,4 @@
         }
     }
 }
+
