@@ -108,7 +108,16 @@ section {
     z-index: -999;
 }
 
+.card__subtitle {
+  margin-bottom: 20px;
+}
 
+.card__info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
 
 
 
