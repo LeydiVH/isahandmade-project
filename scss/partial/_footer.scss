@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
-    background-color: #3d3942;
+    background-color: #110f10;
     
     .footer__container {
         display: flex;
@@ -16,74 +16,72 @@
             justify-content: center;
             align-items: center;
             gap: 60px;
-            margin: 30px;
-            font-size: 24px;    
+            margin: 10px;
+            font-size: 28px;    
             
             .iconify {
                 color: #FFFFFF;
                 transition: all ease-in-out 0.15s;
+                font-size: 24px;
             }
             .iconify:hover {
-                color: #1fb6a9;
+                color: #a28d9c;
             }
         }
 
         .footer__tab {
             display: flex ;
             justify-content: center;            
-            
-            .footer__list {
-                display: flex;
-                gap: 60px;
-                padding: 0px;
-                
-                .footer__link {
-                    color: #FFFFFF
-                }
-                .footer__link:hover {
-                    color: #1fb6a9;
-                    text-decoration: line-through;
-                    transition: all .5s;
-                }
-                
-                .footer__link:active {
-                    color: #85d8d1;
-                    text-decoration: line-through;
-                    transition: all .5s;
-                }
-            }    
         }
         
         .footer__copyright {
             font-weight: 300;
+            text-align: center;
         }
-    }    
+    }  
+    
+    a {
+        color: #FFFFFF;
+        margin: 10px;
+        font-weight: 500;
+    }
 }
 
-@media (max-width: 600px) {    
+.footer__link:hover {
+    color: #a28d9c;
+    transition: all .5s;
+}
+
+.footer__link:active {
+    color: #a28d9c;
+    text-decoration: line-through;
+    transition: all .5s;
+}
+
+@media (max-width: 767.98px) {
+    .footer__tab--socialNetwork {
+        font-size: 22px;
+    }
+
+    .footer__link {
+        font-size: 16px;
+    }
+
+    .footer__copyright {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575.98px) {
     .footer__tab--socialNetwork {
         font-size: 18px;
     }
 
-    .footer__copyright {
-        font-size: 10px;
+    .footer__link {
+        font-size: 14px;
     }
-    
-    
-    .footer__nav {
-        width: 100%;
-  
-        .footer__list {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            font-size: 10px;
-            gap: 10px;
-            padding: 0px;
-            
-            .footer__link {
-                font-size: 10px;
-            }
-        }
-    }    
+
+    .footer__copyright {
+        font-size: 12px;
+    }
 }

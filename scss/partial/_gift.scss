@@ -6,106 +6,61 @@ $headings: (
 $h2: map-get($headings, h2);
 $h3: map-get($headings, h3);
 
-.gift__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.gift {
+    .gift__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-    .gift__container--option {
-        display: grid;
-        grid-template-columns: 50% 50%;   
+    .gift__container--info {
+        background-color: #614e5c;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 35px;
+        width: 100%;
+        height: 100%;
+    }
 
-        .gift__image {
-            max-width: 100%;
-        }
+    .gift__containerText--firstOption {
+        background-color: #705e6b;
+    }
 
-        .gift__containerText {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
+    .gift__containerText--secondOption {
+        background-color: #614e5c;
+    }
 
-            
-            .gift__title {
-                font-weight: 500;
-                margin-bottom: 15px;
-                font-size: $h2;
-            }
-            
-            .gift__paragraph {
-                padding: 20px;
-                font-size: $h3;
-            }
-            
-            .gift__button {
-                font-weight: 500;
-                color: #000000;
-                cursor: pointer;
-                background-color: #f3d4e38c;
-                margin-top: 15px;
-                padding: 20px;
-                border-radius: 8px;
-            }
-            
-            .gift__button:hover {
-                background-color: #626164;
-                color: #ffffff;
-                transition: all .5s;
-            }
-        }
-
-        @mixin containerText ($color) {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: $color; 
-            width: 100%;
-        }
-        
-        .gift__containerText--firstOption {
-            @include containerText(#d38495);
-        }
-        
-        .gift__containerText--secondOption {
-            @include containerText(#e2856b);
-        }
-        
-    } 
+    .btn-other {
+        background-color: #53434f;
+        border-color: #53434f;
+        border-radius: 100px;
+    }
 }
 
-@media (max-width: 600px) {
-    .gift__container--option {
-        display: grid;
-        grid-template-columns: 100%;
+.btn-other:hover {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
 
-        .gift__image--mobile {
-            max-width: 100%;
-        }
+.product__container--price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+                
+}
 
-        .gift__containerText {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
+@media (min-width: 992px) {
+    .gift__container--medium {
+        display: none;
+    }
+}
 
-            .gift__title {
-                margin-top: 50px;
-                font-size: 20px;
-            }
-            
-            .gift__paragraph {
-                padding: 10px;
-                font-size: 10px;
-            }
-        
-            .gift__button {
-                padding: 15px;
-                font-size: 10px;
-                margin-bottom: 50px;
-            }
-        }
-    } 
+@media (max-width: 991.98px) {
+    .gift__container--large {
+        display: none;
+    }
 }
