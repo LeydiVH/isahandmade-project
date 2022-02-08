@@ -107,7 +107,9 @@ section {
     padding-top: 278.719px;
     z-index: -999;
 }
-
+.card {
+  border: 1px solid #e0c7d795;
+}
 .card__title {
   padding-top: 10px;
   padding-bottom: 10px;
